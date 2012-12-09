@@ -1,0 +1,15 @@
+{
+    "name": "hyperion-parse-path"
+  , "repo": "qualiancy/hyperion-parse-path"
+  , "version": "0.0.0"
+  , "description": ""
+  , "license": "MIT"
+  , "keywords": [
+    ]
+  , "main": "lib/parsePath.js"
+  , "scripts": [
+        "lib/parsePath.js"
+    ]
+  , "dependencies": {}
+  , "development": {}
+}
