@@ -1,8 +1,8 @@
 {
     "name": "hyperion-parse-path"
   , "repo": "qualiancy/hyperion-parse-path"
-  , "version": "0.0.0"
-  , "description": ""
+  , "version": "0.1.0"
+  , "description": "Parse tokenized url patterns."
   , "license": "MIT"
   , "keywords": [
     ]

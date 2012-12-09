@@ -1,6 +1,6 @@
 # hyperion-parse-path
 
-> 
+> Parse tokenized url patterns.
 
 ## Installation
 
