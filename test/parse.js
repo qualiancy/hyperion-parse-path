@@ -104,14 +104,15 @@ tests.forEach(function (line) {
 
   describe(line.path, function () {
     it('keys (' + line.keys.length + ')', function () {
-      var parsed = parsePath(line.path);
-      parsed.keys.should.deep.equal(line.keys);
+      var keys = []
+        , parsed = parsePath(line.path, keys);
+      keys.should.deep.equal(line.keys);
     });
 
     line.pass.forEach(function (pass, which) {
       it('[+] ' + pass.path, function () {
         var parsed = parsePath(line.path)
-          , m = pass.path.match(parsed.regexp)
+          , m = pass.path.match(parsed)
           , i = 1
           , res;
 
@@ -131,7 +132,7 @@ tests.forEach(function (line) {
     line.fail.forEach(function (fail) {
       it('[-] ' + fail, function () {
         var parsed = parsePath(line.path)
-          , m = fail.match(parsed.regexp);
+          , m = fail.match(parsed);
         should.not.exist(m);
       });
     });
