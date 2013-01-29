@@ -58,6 +58,13 @@ path('*')
   .pass('/image.png')
   .pass('/images/image.jpg');
 
+path(/(.*)/)
+  .pass('/')
+  .pass('/home')
+  .pass('/blog')
+  .pass('/image.png')
+  .pass('/images/image.jpg');
+
 path('/home/*/users')
   .pass('/home/blog/1/users')
   .pass('/home/something/users')
